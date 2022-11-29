@@ -1,0 +1,8 @@
+<div class="custom-wish">
+    <button (click)="wish('snow')">Click for a random wish</button>
+    <div id="out">
+        <li *ngFor="let product of results">
+            <button (click)="add(product.code)">{{product.name}}</button>
+        </li>
+    </div>
+</div>
